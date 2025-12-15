@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>AI Travel Planner</h1>
+
+    <textarea id="prompt" placeholder="Describe your trip..."></textarea>
+
+    <input type="file" id="imageInput" accept="image/*" />
+
+    <button id="generateBtn" disabled>Generate Itinerary</button>
+  </div>
+
+  <div id="loading" class="hidden">
+  <div class="loader"></div>
+  <p>Analyzing image & planning your trip...</p>
+</div>
+
+  <div id="output" class="hidden">
+    <h2>Your Itinerary</h2>
+    <div id="days"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
